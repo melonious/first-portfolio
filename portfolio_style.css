@@ -109,7 +109,6 @@ nav {
 }
 
 footer {
-  display: flex;
   /*border: 1px solid black;*/
   text-align: center;
   font-family: 'Josefin Sans', sans-serif;
@@ -141,6 +140,11 @@ i {
     width: 30%;
     height: 30%;
     font-family: 'Josefin Sans', sans-serif;
+  }
+
+    li {
+      display: inline;
+    }
 
 
 }
