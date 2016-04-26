@@ -1,4 +1,17 @@
 /*<style type="text/css">*/
+/*require '/Cabana_Font'
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url() format("truetype");
+}*/
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+@import url(https://fonts.googleapis.com/css?family=Dosis);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans);
+
 
 body {
   display:flex;
@@ -7,8 +20,31 @@ body {
   width: 100%;
   height:100%;
   color: white;
+  background: linear-gradient(180deg, #000, #121213, #9194b6);
+  /*background: linear-gradient(180deg, #9194b6, #000);*/
+  background-size: 200%;
+  background-position: 100%;
+  animation: background-animation 10s ease infinite alternate;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.4;
 }
 
+/*body {
+ background: linear-gradient(80deg, #000000 , #5454a4 );
+ background-size: 200%;
+ background-position: 100%;
+ animation: background-animation 10s ease infinite alternate;
+ -webkit-font-smoothing: antialiased;
+ line-height: 1.4;
+}*/
+@keyframes background-animation {
+   0% {
+       background-position: 100%;
+   }
+   100% {
+       background-position: 0%;
+   }
+}
 
 /*div {
   display: flex;
@@ -25,6 +61,9 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-image: url("doc.jpg");
+  /*font-family: Tahoma, Geneva, sans-serif;*/
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
 }
 
 .main {
@@ -33,19 +72,22 @@ body {
   width: auto;
 }
 
+section p {
+    background-color: #c7caf2;
+}
+
 #name {
   border: 6px solid white;
   align-items: center;
   justify-content: space-around;
   font-size: 60px;
   color: white;
-  padding: 1em 1em;
-
+  padding: 0.5em 1em;
 }
 
 aside {
   border: 1px solid black;
-  padding: 1em 0;
+  padding: 0 0;
   width: 15%;
   height: 15%;
 }
@@ -53,7 +95,8 @@ aside {
 section {
   border: 1px solid black;
   max-width: 70%;
-  margin: 1em 1em;
+  margin: 0 1em;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 p {
